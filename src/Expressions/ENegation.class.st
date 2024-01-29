@@ -17,6 +17,12 @@ ENegation >> evaluate [
 	^expression evaluate negated  
 ]
 
+{ #category : #printing }
+ENegation >> evaluateWith: anObject [
+	^ (expression evaluateWith: anObject) negated
+
+]
+
 { #category : #accessing }
 ENegation >> expression: anExpression [
 	expression := anExpression 

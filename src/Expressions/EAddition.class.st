@@ -24,6 +24,11 @@ EAddition >> evaluate [
 ]
 
 { #category : #'public access' }
+EAddition >> evaluateWith: anObject [
+	^ (right evaluateWith: anObject) + (left evaluateWith: anObject)
+]
+
+{ #category : #'public access' }
 EAddition >> left: anExpression [
  	left := anExpression
 	
