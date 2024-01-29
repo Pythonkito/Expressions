@@ -22,6 +22,11 @@ ENegation >> expression: anExpression [
 	expression := anExpression 
 ]
 
+{ #category : #accessing }
+ENegation >> negated [
+	^ expression
+]
+
 { #category : #printing }
 ENegation >> printOn: aStream [
 	aStream nextPutAll: '-'.
