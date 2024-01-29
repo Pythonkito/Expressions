@@ -8,6 +8,11 @@ Class {
 	#category : #Expressions
 }
 
+{ #category : #'instance creation' }
+EAddition class >> left: anInteger right: anInteger2 [
+	^self new left: anInteger ; right: anInteger2 
+]
+
 { #category : #'public access' }
 EAddition >> evaluate [
 	^left evaluate + right evaluate
