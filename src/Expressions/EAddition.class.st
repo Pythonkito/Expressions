@@ -1,10 +1,6 @@
 Class {
 	#name : #EAddition,
-	#superclass : #EExpression,
-	#instVars : [
-		'left',
-		'right'
-	],
+	#superclass : #EBinaryExpression,
 	#category : #Expressions
 }
 
@@ -33,14 +29,9 @@ EAddition >> left: anExpression [
 	
 ]
 
-{ #category : #printing }
-EAddition >> printOn:aStream [
-	aStream 
-		nextPutAll: '(';
-		nextPutAll: left printString;
-		nextPutAll: '+';
-		nextPutAll: right printString;
-		nextPutAll: ')'.
+{ #category : #'as yet unclassified' }
+EAddition >> operatorString [
+	^'+'
 ]
 
 { #category : #'public access' }
