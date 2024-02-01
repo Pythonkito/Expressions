@@ -5,6 +5,11 @@ Class {
 }
 
 { #category : #accessing }
+EExpression >> evaluate [
+	^ self subclassResponsibility 
+]
+
+{ #category : #accessing }
 EExpression >> evaluateWith: aDictionary [
 	^ self evaluate
 
