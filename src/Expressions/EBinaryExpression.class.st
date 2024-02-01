@@ -8,7 +8,7 @@ Class {
 	#category : #Expressions
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #printing }
 EBinaryExpression >> operatorString [
 	^self subclassResponsibility 
 ]
